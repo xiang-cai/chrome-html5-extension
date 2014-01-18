@@ -1,0 +1,40 @@
+﻿{
+    "manifest_version": 2,
+    "default_locale": "zh_CN",
+    "name": "__MSG_extName__",
+    "version": "0.1.8",
+    "description": "__MSG_extDesp__",
+    "icons": { "128": "icon_128.png", "32":"icon_32.png" },
+    "permissions": [
+        "tabs",
+        "storage",
+        "unlimitedStorage",
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        "flag.css",
+        "seed.js",
+        "sites/youku.js",
+        "sites/sina.js",
+        "sites/sohu.js",
+        "sites/qq.js",
+        "sites/56.js",
+        "sites/iqiyi.js",
+        "sites/tudou.js"
+    ],
+    "content_scripts": [{
+        "run_at": "document_end",
+        "matches": [
+            "http://*.56.com/*",
+            "http://*.youku.com/*",
+            "http://*.video.qq.com/*",
+            "http://*.iqiyi.com/*",
+            "http://*.tv.sohu.com/*",
+            "http://*.v.qq.com/*",
+            "http://*.sina.com.cn/*",
+            "http://*.tudou.com/*"
+        ],
+        "js": ["seed.js", "content.js"],
+        "css": ["flag.css"]
+    }]
+}
