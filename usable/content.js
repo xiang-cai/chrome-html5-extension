@@ -24,7 +24,7 @@
          var type = false, host = location.host;
 
          if(/youku\.com/.test(host) && getVideoFlag('videoId'))                         type = "youku";
-         if(/tudou\.com/.test(host) && getVideoFlag('iid'))                             type = "tudou";
+      //   if(/tudou\.com/.test(host) && getVideoFlag('iid'))                             type = "tudou";
          if(/sohu\.com/.test(host)  && getVideoFlag('vid'))                             type = "sohu";
          if(/iqiyi\.com/.test(host) && getVideoFlag('info'))                            type = "iqiyi";
          if(/letv\.com/.test(host)  && document.getElementById('fla_box'))              type = "letv";
