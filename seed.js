@@ -41,7 +41,7 @@
 
     var flagElement = document.createElement("z");
         flagElement.setAttribute("id", "html5-player");
-        flagElement.setAttribute("title", "Click to switch between flash/html5 players");
+        flagElement.setAttribute("title", "Click to switch between flash/html5 player");
 //        flagElement.innerHTML = "Embedded HTML5 player";
 
     var segElement = document.createElement("z");
